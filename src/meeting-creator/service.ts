@@ -61,8 +61,7 @@ export function createMeetingService() {
               dateTime: meeting.endDateTime?.toISOString(),
               timeZone: "UTC"
           },
-          isOnlineMeeting: true,
-          onlineMeetingProvider: "teamsForBusiness"
+          isOrganizer: true
       };
 
       const calendar_response = await axios.post(
